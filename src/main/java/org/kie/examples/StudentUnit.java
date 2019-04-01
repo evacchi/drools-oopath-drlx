@@ -1,5 +1,20 @@
 package org.kie.examples;
 
+/**
+ * A "pure-Java", OOPath-centric alternative to DRLX.
+ * Use of annotations makes it potentially available to other JVM languages
+ * such as Scala, Kotlin.
+ *
+ * Class fields (or accessors?) define the working memory of the Unit
+ * Annotated methods define **rules**. The RHS is the method body,
+ * the annotation defines the predicate(s), similarly to how JAX-RS annotation
+ * defines a REST endpoint.
+ *
+ * This is not intended as a complete replacement to "regular" DRL, but
+ * it's a new, Java-friendly notation that simplifies a bit our current language
+ * with a smallish DSL.
+ *
+ */
 public class StudentUnit {
 
     DataSource<Student> students;
